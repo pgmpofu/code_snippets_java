@@ -1,1 +1,3 @@
-# code_snippets_java
+# Code Snippets Java
+
+Small code solutions to random algorithmic tasks.
