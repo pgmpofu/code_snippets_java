@@ -1,3 +1,10 @@
+/**
+ * Write a program that helps the user count his change.
+ * The program should ask how many quarters the user has,
+ * then how many dimes, then how many nickels, then how many pennies.
+ * Then the program should tell the user how much money he has, expressed in dollars.
+ */
+
 import java.math.BigDecimal;
 import java.util.Scanner;
 
@@ -18,6 +25,6 @@ public class ChangeCounter {
         System.out.println("Nickels       :" + (nickels*5));
         System.out.println("Pennies       :" + pennies);
         int total = (quarters*25) + (dimes*10) + (nickels*5) + pennies;
-        System.out.println("Total change  :" + BigDecimal.valueOf(total).divide(BigDecimal.valueOf(100)));
+        System.out.println("Total change  $" + BigDecimal.valueOf(total).divide(BigDecimal.valueOf(100)));
     }
 }
