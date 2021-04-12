@@ -22,10 +22,10 @@ public class DegreesConverter {
             System.out.println(Constants.PROMPT_ENTER_UNIT);
             String unit = scanner.nextLine();
             if (unit.equalsIgnoreCase(String.valueOf(Unit.C))) {
-                int toFahrenheit = degreesToFahrenheit(temperature);
+                int toFahrenheit = DegreesConverterUtil.degreesToFahrenheit(temperature);
                 System.out.println("A temperature of " + temperature + " degrees Celcius is equivalent to " + toFahrenheit + " degrees Fahrenheit.");
             } else if (unit.equalsIgnoreCase(String.valueOf(Unit.F))) {
-                int toDegrees = fahrenheitToDegrees(temperature);
+                int toDegrees = DegreesConverterUtil.fahrenheitToDegrees(temperature);
                 System.out.println("A temperature of " + temperature + " degrees Fahrenheit is equivalent to " + toDegrees + " degrees Celcius.");
             } else {
                 System.out.println(Constants.ERROR_INCORRECT_UNIT);
@@ -35,13 +35,5 @@ public class DegreesConverter {
             repeat = scanner.nextLine();
         }
         System.out.println(Constants.PROMPT_GOODBYE);
-    }
-
-    public static int degreesToFahrenheit(int temperature) {
-        return (temperature * 9/5) + 32;
-    }
-
-    public static int fahrenheitToDegrees(int temperature) {
-        return (temperature - 32)* 5/9;
     }
 }
