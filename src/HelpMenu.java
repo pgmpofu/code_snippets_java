@@ -3,7 +3,6 @@
  * @author Patience Mpofu
  * @date 04/11/2021
  */
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -35,6 +34,7 @@ public class HelpMenu {
                         break;
                     default:
                         flag = false;
+                        System.out.println(Constants.PROMPT_GOODBYE);
                 }
             } catch (InputMismatchException ex) {
                 flag = false;

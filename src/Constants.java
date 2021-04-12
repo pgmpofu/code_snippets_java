@@ -1,3 +1,8 @@
+/**
+ * Constants used throughout the project
+ * @author Patience Mpofu
+ * @date 04/11/2021
+ */
 public class Constants {
     public static final String PROMPT_ENTER_TEMP = "Please enter your temperature";
     public static final String PROMPT_ENTER_UNIT = "Please enter the units (F/C):";
