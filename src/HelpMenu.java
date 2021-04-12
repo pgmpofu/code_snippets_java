@@ -33,12 +33,16 @@ public class HelpMenu {
                         System.out.println(Constants.INFO_DO_WHILE);
                         break;
                     default:
-                        flag = false;
-                        System.out.println(Constants.PROMPT_GOODBYE);
+                         flag = printGoodbyeMsg();
                 }
             } catch (InputMismatchException ex) {
-                flag = false;
+                flag = printGoodbyeMsg();
             }
         }
+    }
+
+    private static boolean printGoodbyeMsg() {
+        System.out.println(Constants.PROMPT_GOODBYE);
+        return false;
     }
 }
