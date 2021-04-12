@@ -3,6 +3,13 @@ public class Constants {
     public static final String PROMPT_ENTER_UNIT = "Please enter the units (F/C):";
     public static final String PROMPT_ANOTHER_CONVERSION = "Do you wish another conversion? (Y/N)";
     public static final String PROMPT_GOODBYE= "Thank you. Goodbye.";
+    public static final String PROMPT_HELP_MENU= "Java Help Menu";
+    public static final String PROMPT_HELP_ON= "Select Help on: \n 1. If \n 2. Switch \n 3. For \n 4. While \n 5. Do-while \n x. Exit \n";
+    public static final String INFO_IF = "Will allow code to be executed if the condition supplied is true";
+    public static final String INFO_FOR = "Executes the same piece of code multiple times and tracks the number of execution times using a counter. Will terminate once the counter reaches a pre-determined value.";
+    public static final String INFO_SWITCH = "Specifies multiple alternatives blocks of code that will be executed if a condition is true";
+    public static final String INFO_WHILE= "Executes a piece of code as long as a certain condition has not been reached.";
+    public static final String INFO_DO_WHILE= "Executes a piece of code at least once as long as a certain condition has not been reached.";
     public static final String ERROR_INCORRECT_UNIT = "Error! Valid units are F/C please try again";
 
 }
