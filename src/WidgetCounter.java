@@ -8,7 +8,6 @@ import java.util.Scanner;
  */
 public class WidgetCounter {
     public static void main(String[] args) {
-
         System.out.println("How many widgets do you have?");
         Scanner scanner = new Scanner(System.in);
         BigDecimal qty = BigDecimal.valueOf(scanner.nextInt());
