@@ -1,3 +1,5 @@
+package assignments.one;
+
 /**
  * Utility class for conversions between degrees and Fahrenheit
  */

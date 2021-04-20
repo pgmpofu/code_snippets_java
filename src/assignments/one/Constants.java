@@ -1,5 +1,7 @@
+package assignments.one;
+
 /**
- * Constants used throughout the project
+ * assignments.one.Constants used throughout the project
  * @author Patience Mpofu
  * @date 04/11/2021
  */

@@ -1,8 +1,9 @@
-/**
+package assignments.one; /**
  * This program converts Temperatures from Fahrenheit to Celsius and vice versa.
  * @author Patience Mpofu
  * @date 04/11/2021
  */
+
 import java.util.Scanner;
 
 public class DegreesConverter {

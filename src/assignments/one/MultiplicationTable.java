@@ -1,3 +1,5 @@
+package assignments.one;
+
 /**
  * Prints multiplication tables from 1 to 12
  * @author Patience Mpofu
