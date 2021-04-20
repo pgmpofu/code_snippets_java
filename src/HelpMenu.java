@@ -3,7 +3,7 @@
  * (both Fahrenheit and Celsius), and running at 5 degree intervals
  * for 100 entries in each table.
  */
-public class DegreesToFahrenheitTable {
+public class HelpMenu {
     public static void main(String[] args) {
         System.out.println(Constants.PROMPT_TABLE_HEADER + " " + Constants.PROMPT_COLUMN_SEPARATOR + Constants.PROMPT_TABLE_HEADER);
         String subheading = "     " + Constants.PROMPT_COLUMN_HEADER_F + "       " + Constants.PROMPT_COLUMN_HEADER_C + "       " + Constants.PROMPT_COLUMN_SEPARATOR + "      " + Constants.PROMPT_COLUMN_HEADER_C + "        " + Constants.PROMPT_COLUMN_HEADER_F;
