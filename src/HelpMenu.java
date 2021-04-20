@@ -1,34 +1,27 @@
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
-public class HelpMenu {
+/**
+ * A table of temperature conversions, starting from −40 degrees
+ * (both Fahrenheit and Celsius), and running at 5 degree intervals
+ * for 100 entries in each table.
+ */
+public class DegreesToFahrenheitTable {
     public static void main(String[] args) {
-        boolean flag = true;
-        while (flag) {
-            System.out.println(Constants.PROMPT_HELP_MENU);
-            System.out.println(Constants.PROMPT_HELP_ON);
+        System.out.println(Constants.PROMPT_TABLE_HEADER + " " + Constants.PROMPT_COLUMN_SEPARATOR + Constants.PROMPT_TABLE_HEADER);
+        String subheading = "     " + Constants.PROMPT_COLUMN_HEADER_F + "       " + Constants.PROMPT_COLUMN_HEADER_C + "       " + Constants.PROMPT_COLUMN_SEPARATOR + "      " + Constants.PROMPT_COLUMN_HEADER_C + "        " + Constants.PROMPT_COLUMN_HEADER_F;
+        System.out.println(subheading);
+        double start = -40.000;
 
-            Scanner scanner = new Scanner(System.in);
-            try {
-                int option = scanner.nextInt();
-                System.out.format("Selection %d\n", option);
-                switch (option) {
-                    case 1 -> System.out.println(Constants.INFO_IF);
-                    case 2 -> System.out.println(Constants.INFO_SWITCH);
-                    case 3 -> System.out.println(Constants.INFO_FOR);
-                    case 4 -> System.out.println(Constants.INFO_WHILE);
-                    case 5 -> System.out.println(Constants.INFO_DO_WHILE);
-                    default -> flag = printGoodbyeMsg();
-                }
-            } catch (InputMismatchException ex) {
-                System.out.format("Selection: x\n");
-                flag = printGoodbyeMsg();
+        for(int i = 0; i < 100; i++) {
+            if(start < -5) {
+                System.out.format("%.3f %.3f      %s    %.3f   %.3f\n", start, DegreesConverterUtil.fahrenheitToDegrees(start), Constants.PROMPT_COLUMN_SEPARATOR, start, DegreesConverterUtil.degreesToFahrenheit(start));
+            } else if(start == -5) {
+                System.out.format(" %.3f %.3f      %s     %.3f   %.3f\n", start, DegreesConverterUtil.fahrenheitToDegrees(start), Constants.PROMPT_COLUMN_SEPARATOR, start, DegreesConverterUtil.degreesToFahrenheit(start));
             }
+            else if(start > -5 && start < 10) {
+                System.out.format("  %.3f %.3f      %s     %.3f   %.3f\n", start, DegreesConverterUtil.fahrenheitToDegrees(start), Constants.PROMPT_COLUMN_SEPARATOR, start, DegreesConverterUtil.degreesToFahrenheit(start));
+            } else if(start >= 10) {
+                System.out.format(" %.3f %.3f      %s     %.3f   %.3f\n", start, DegreesConverterUtil.fahrenheitToDegrees(start), Constants.PROMPT_COLUMN_SEPARATOR, start, DegreesConverterUtil.degreesToFahrenheit(start));
+            }
+            start+=5;
         }
-    }
-
-    private static boolean printGoodbyeMsg() {
-        System.out.println(Constants.PROMPT_GOODBYE);
-        return false;
     }
 }
