@@ -1,4 +1,4 @@
-package two;
+package assignments.two;
 
 public class Pig extends Animal{
     private final String PIG_SOUND = "oink";

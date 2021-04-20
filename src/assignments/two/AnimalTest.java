@@ -1,4 +1,4 @@
-package two;
+package assignments.two;
 
 import java.util.Scanner;
 

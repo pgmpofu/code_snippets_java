@@ -1,4 +1,4 @@
-package two;
+package assignments.two;
 
 /**
  * creates several instances of each animal, and then calls each animal instance’s

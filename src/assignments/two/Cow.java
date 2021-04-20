@@ -1,4 +1,4 @@
-package two;
+package assignments.two;
 
 public class Cow extends Animal {
 

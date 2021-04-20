@@ -1,4 +1,4 @@
-package two;
+package assignments.two;
 
 /**
  * Class  with an default sound() method that does not output a specific animal sound
