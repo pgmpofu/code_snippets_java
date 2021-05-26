@@ -1,4 +1,15 @@
-package assignments.two;
+package assignments.two; /**
+ * Main test class for all the animal classes
+ *
+ * Compiling and running instructions
+ * Assuming JDK 11 and the CLASSPATH are correctly set up
+ * Compile: javac *.java
+ * Run : java AnimalTest.java
+ *
+ * @author Patience Mpofu
+ * @date 05/25/2021
+ * @copyright Patience G Mpofu
+ */
 
 import java.util.Scanner;
 
@@ -37,6 +48,7 @@ public class AnimalTest {
                 System.out.println(PROMPT_INVALID);
             }
         }
+        scanner.close();
     }
 
     private static boolean isValid(String animalName) {
