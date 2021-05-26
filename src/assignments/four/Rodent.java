@@ -1,4 +1,4 @@
-package four;
+package assignments.four;
 
 public class Rodent {
 

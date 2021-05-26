@@ -1,3 +1,5 @@
+package assignments.misc;
+
 import java.util.Arrays;
 
 /**

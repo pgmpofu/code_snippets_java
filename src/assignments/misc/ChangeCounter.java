@@ -1,4 +1,4 @@
-/**
+package assignments.misc; /**
  * Write a program that helps the user count his change.
  * The program should ask how many quarters the user has,
  * then how many dimes, then how many nickels, then how many pennies.

@@ -1,4 +1,4 @@
-package four;
+package assignments.four;
 
 public class RodentTest {
     public static void main(String[] args) {

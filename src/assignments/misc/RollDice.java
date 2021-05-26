@@ -1,3 +1,5 @@
+package assignments.misc;
+
 /**
  * Simulator for rolling a pair of dice
  */

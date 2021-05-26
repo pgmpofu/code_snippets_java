@@ -1,3 +1,5 @@
+package assignments.misc;
+
 /**
  * Find the number of consecutive ones in a binary array
  */

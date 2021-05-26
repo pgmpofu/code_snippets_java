@@ -1,3 +1,5 @@
+package assignments.misc;
+
 /**
  * Print all prime numbers from 1 to 10,000
  * @author Patience Mpofu

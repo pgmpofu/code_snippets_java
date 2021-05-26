@@ -1,4 +1,4 @@
-/**
+package assignments.misc; /**
  * Write a program that asks the user's name,
  * and then greets the user by name. Before
  * outputting the user's name, convert it to upper case letters.

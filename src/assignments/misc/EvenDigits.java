@@ -1,3 +1,5 @@
+package assignments.misc;
+
 /**
  * Given an array of integers find the number of
  * integers with even number of digits

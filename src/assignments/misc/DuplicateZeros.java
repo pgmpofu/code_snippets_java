@@ -1,3 +1,5 @@
+package assignments.misc;
+
 public class DuplicateZeros {
 
     public static void main(String[] args) {
